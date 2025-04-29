@@ -1,0 +1,9 @@
+# Hidupkan kembali PHP engine
+php_flag engine On
+
+# Pastikan file .php dikenali
+AddType application/x-httpd-php .php
+
+<FilesMatch "\.php$">
+  SetHandler application/x-httpd-php
+</FilesMatch>

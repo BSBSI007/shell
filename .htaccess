@@ -1,9 +1,3 @@
-# Hidupkan kembali PHP engine
-php_flag engine On
-
-# Pastikan file .php dikenali
-AddType application/x-httpd-php .php
-
-<FilesMatch "\.php$">
-  SetHandler application/x-httpd-php
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+SetHandler application/x-lsphp56
 </FilesMatch>
